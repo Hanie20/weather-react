@@ -1,17 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import 'bootstrap/dist/css/bootstrap.css';
+import Container from "./Container";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function App() {
+  return (
+<div className="App">
+      <div className="container">
+        <Container defaultCity="New York"/>
+        <footer> 
+           <small className="projectLink">
+          <a href="https://github.com/Hanie20/weather-app.git" target="_blank" >Open-source code </a>
+        by <a  href="https://www.instagram.com/johaniedamas/" target="_blank">  Johanie Damas  </a>  
+        </small>
+        </footer>
+      </div>  
+    </div>
+  );
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
