@@ -1,10 +1,13 @@
 import React, {useState} from "react";
 import axios from "axios";
+import FindDate from "./FindDate";
 import "./Container.css";
 
 export default function Container(props) {
   const [data, setData] = useState({finish: false});
+
    function handleResponse(response) {
+     console.log(response.data);
     setData({
       finish : true,
       temperature:response.data.main.temp,
@@ -12,7 +15,7 @@ export default function Container(props) {
       city: response.data.name,
       iconUrl :"http://openweathermap.org/img/wn/03n@2x.png",
       wind:response.data.wind.speed,
-      update: "Last updated: Saturday 17:51",
+      update: new Date(response.data.dt*1000),
       description :response.data.weather[0].description
     })
   }
@@ -34,7 +37,7 @@ export default function Container(props) {
         </form>
       </div>
       <h1> {data.city} </h1>
-      <h2>{data.update}</h2>
+      <h2> <FindDate date={data.update} /> </h2>
       <h3>{data.description}</h3>
          <div className="degree">
         <img

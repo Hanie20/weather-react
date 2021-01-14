@@ -7,7 +7,7 @@ function App() {
   return (
 <div className="App">
       <div className="container">
-        <Container defaultCity="New York"/>
+        <Container defaultCity="Montreal"/>
         <footer> 
            <small className="projectLink">
           <a href="https://github.com/Hanie20/weather-react" target="_blank" >Open-source code </a>
