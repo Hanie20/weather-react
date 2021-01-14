@@ -10,7 +10,7 @@ function App() {
         <Container defaultCity="New York"/>
         <footer> 
            <small className="projectLink">
-          <a href="https://github.com/Hanie20/weather-app.git" target="_blank" >Open-source code </a>
+          <a href="https://github.com/Hanie20/weather-react" target="_blank" >Open-source code </a>
         by <a  href="https://www.instagram.com/johaniedamas/" target="_blank">  Johanie Damas  </a>  
         </small>
         </footer>
