@@ -81,20 +81,15 @@ h3 {
 .Container .temp {
   font-size: 45px;
   opacity: 0.8;
-  margin-left: -10px;
+  margin-left: 5px;
 }
-.Container .degree .iconImg,
-.iconImages {
+.Container .iconImages {
   max-width: 80px;
   margin: 0px;
   margin-top: -20px;
   padding: 0%;
-}
-.Container .iconImages {
   margin-left: -20px;
-  margin-bottom: -15px;
 }
-
 .Container .unit {
   position: relative;
   top: -20px;
@@ -108,4 +103,11 @@ h3 {
 .Container .active:hover {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8);
+}
+
+.Container canvas {
+  margin: 0px;
+  margin-left: -10px;
+  margin-top: 5px;
+  padding: 0%;
 }

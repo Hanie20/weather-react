@@ -1,5 +1,6 @@
 import React from "react";
 import FindDate from "./FindDate";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherData(props) {
     return(
@@ -8,11 +9,9 @@ export default function WeatherData(props) {
       <h2> <FindDate date={props.info.update} /> </h2>
       <h3>{props.info.description}</h3>
          <div className="degree">
-        <img
-          src={props.info.iconUrl}
-          alt={props.info.description}
-          className="iconImg"
-        />
+           <div className="float-left">
+           <WeatherIcon code={props.info.icon} />
+           </div>
         <span className="temp">{Math.round(props.info.temperature)}</span>
         <span className="unit">
           <a href="/" className="active">
