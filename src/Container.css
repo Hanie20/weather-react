@@ -102,7 +102,6 @@ h3 {
 
 .Container .active:hover {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.8);
 }
 
 .Container canvas {
