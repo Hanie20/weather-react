@@ -13,7 +13,7 @@ export default function Container(props) {
       temperature:response.data.main.temp,
       humidity: response.data.main.humidity,
       city: response.data.name,
-      iconUrl :"http://openweathermap.org/img/wn/03n@2x.png",
+      iconUrl :`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       wind:response.data.wind.speed,
       update: new Date(response.data.dt*1000),
       description :response.data.weather[0].description
