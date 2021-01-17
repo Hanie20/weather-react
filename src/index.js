@@ -11,7 +11,7 @@ function App() {
         <footer> 
            <small className="projectLink">
           <a href="https://github.com/Hanie20/weather-react" target="_blank">Open-source code </a>
-        by <a  href="https://www.instagram.com/johaniedamas/" target="_blank">  Johanie Damas  </a>  
+        by <a  href="https://www.linkedin.com/in/johanie-damas-b595b71b5" target="_blank">  Johanie Damas  </a>  
         </small>
         </footer>
       </div>  
