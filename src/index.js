@@ -10,8 +10,8 @@ function App() {
         <Container defaultCity="Montreal"/>
         <footer> 
            <small className="projectLink">
-          <a href="https://github.com/Hanie20/weather-react">Open-source code </a>
-        by <a  href="https://www.instagram.com/johaniedamas/">  Johanie Damas  </a>  
+          <a href="https://github.com/Hanie20/weather-react" target="_blank">Open-source code </a>
+        by <a  href="https://www.instagram.com/johaniedamas/" target="_blank">  Johanie Damas  </a>  
         </small>
         </footer>
       </div>  
