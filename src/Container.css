@@ -47,7 +47,7 @@ h3 {
 }
 
 .Container .form-group .city,
-.current .submitButton {
+.submitButton {
   font-family: "Playfair Display", serif;
 }
 
@@ -59,8 +59,7 @@ h3 {
   padding: 5px;
 }
 
-.Container .current,
-.submitButton {
+.Container .submitButton {
   background: #318fb5;
   padding: 35px, 40px;
   transition: all 200ms ease-in-out;
@@ -70,12 +69,8 @@ h3 {
   font-size: 20px;
 }
 
-.Container .current {
+.Container .submitButton:hover {
   background: #eea2a2;
-}
-
-.Container .current:hover {
-  background: #318fb5;
 }
 
 .Container .temp {

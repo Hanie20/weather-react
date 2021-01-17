@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import axios from "axios";
+ import Loader from 'react-loader-spinner';
 import WeatherData from "./WeatherData";
 import Forecast from "./Forecast";
 import "./Container.css";
@@ -55,7 +56,6 @@ export default function Container(props) {
             className="submitButton"
             autocomplete="off"
           />
-          <input type="submit"  value="Current" className="current"/>
         </form>
         <WeatherData info={data} />
         <Forecast city = {data.city}/>
@@ -66,6 +66,10 @@ export default function Container(props) {
       );
   } else { 
   searchData();
-  return "The app is loading....";
+  return(
+     <div className="Container"> 
+  <Loader type="Circles" color="#00BFFF" height={100} width={200}/>
+  </div>
+  );
   }
 }
